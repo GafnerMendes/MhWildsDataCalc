@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { DataGrid, type GridColDef } from "@mui/x-data-grid";
 import { getWeapons } from "../../../Controller/WeaponParser/WeaponParser";
 import type { ParsedWeapon } from "../../../Controller/WeaponParser/WeaponParser";
-
+import { dataGridStyles } from "./styles";
 const columns: GridColDef<ParsedWeapon>[] = (
   [
     { field: "id", headerName: "ID", width: 90 },
@@ -53,10 +53,7 @@ export default function Armory() {
       rows={rows}
       columns={columns}
       loading={loading}
-      pageSizeOptions={[10, 25, 50]}
-      initialState={{
-        pagination: { paginationModel: { pageSize: 10 } },
-      }}
+      sx={dataGridStyles}
     />
   );
 }
