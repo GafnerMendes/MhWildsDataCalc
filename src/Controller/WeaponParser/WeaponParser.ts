@@ -1,4 +1,4 @@
-import { getBowData } from "../../Model/Services/API/api";
+import { getWeaponData } from "../../Model/Services/API/weaponGet";
 import type { Weapons } from "../../Model/types/weaponTypes";
 
 export interface ParsedWeapon extends Omit<
@@ -10,7 +10,7 @@ export interface ParsedWeapon extends Omit<
   craftable: boolean; // was Crafting object
 }
 export const getWeapons = async (): Promise<ParsedWeapon[]> => {
-  const data = await getBowData();
+  const data = await getWeaponData();
   return data.map((item) => ({
     ...item,
     damage: item.damage.display,
