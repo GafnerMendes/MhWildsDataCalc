@@ -50,7 +50,12 @@ export default function SideShit() {
               <ListItem component={Link} to={item.path} key={index}>
                 <ListItemButton
                   selected={index === 0}
-                  sx={{ textDecoration: "none", color: "inherit" }}
+                  sx={{
+                    textDecoration: "none",
+                    color: "inherit",
+                    border: "1px",
+                    borderColor: "white",
+                  }}
                 >
                   <ListItemIcon sx={{ fontSize: "45px" }}>
                     {item.icon}
