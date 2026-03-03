@@ -1,4 +1,3 @@
-// styles/WeaponsTableStyles.ts
 import type { SxProps } from "@mui/material";
 
 export const dataGridStyles: SxProps = {

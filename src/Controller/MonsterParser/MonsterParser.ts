@@ -1,7 +1,7 @@
 import { getWeaponData } from "../../Model/Services/API/weaponGet";
-import type { Weapons } from "../../Model/types/weaponTypes";
+import type { Monsters } from "../../Model/types/monsterTypes";
 
-export interface ParsedWeapon extends Omit<
+export interface ParsedMonster extends Omit<
   Weapons,
   "damage" | "specials" | "crafting"
 > {
