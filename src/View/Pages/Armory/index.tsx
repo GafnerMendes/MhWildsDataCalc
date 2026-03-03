@@ -44,6 +44,8 @@ export default function Armory() {
       setLoading(false);
     }
   };
+
+  // eu sei que isso é uma atrocidade, vou mudar depois
   useEffect(() => {
     fetchWeapons();
   }, []);
