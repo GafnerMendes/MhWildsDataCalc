@@ -14,6 +14,7 @@ import { WiAlien } from "react-icons/wi";
 import MuiDrawer, { drawerClasses } from "@mui/material/Drawer";
 import { Link, useLocation } from "react-router-dom";
 
+//fazer um arquivo styles e jogar isso lá 
 const Drawer = styled(MuiDrawer)({
   width: 240,
   flexShrink: 0,
@@ -25,6 +26,8 @@ const Drawer = styled(MuiDrawer)({
   },
 });
 
+
+//modularizar isso?
 const mainListItems = [
   { text: "Home", icon: <GiWoodCabin />, path: "/home" },
   { text: "Armory", icon: <GiAbdominalArmor />, path: "/armory" },
