@@ -12,7 +12,7 @@ import { FaDragon, FaGhost } from "react-icons/fa6";
 import { GiAbdominalArmor, GiNotebook, GiWoodCabin } from "react-icons/gi";
 import { WiAlien } from "react-icons/wi";
 import MuiDrawer, { drawerClasses } from "@mui/material/Drawer";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Drawer = styled(MuiDrawer)({
   width: 240,
@@ -35,6 +35,8 @@ const mainListItems = [
 ];
 
 export default function SideShit() {
+  const location = useLocation();
+
   return (
     <Drawer
       variant="permanent"
@@ -47,8 +49,10 @@ export default function SideShit() {
         <Stack>
           <List>
             {mainListItems.map((item, index) => (
-              <ListItem component={Link} to={item.path} key={index}>
+              <ListItem key={index}>
                 <ListItemButton
+                  component={Link}
+                  to={item.path}
                   selected={index === 0}
                   sx={{
                     color: "inherit",
