@@ -51,7 +51,6 @@ export default function SideShit() {
                 <ListItemButton
                   selected={index === 0}
                   sx={{
-                    textDecoration: "none",
                     color: "inherit",
                     border: "1px",
                     borderColor: "white",
@@ -60,7 +59,7 @@ export default function SideShit() {
                   <ListItemIcon sx={{ fontSize: "45px" }}>
                     {item.icon}
                   </ListItemIcon>
-                  <ListItemText>
+                  <ListItemText sx={{ color: "white" }}>
                     {item.text}, {index}
                   </ListItemText>
                 </ListItemButton>
