@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import MainPage from "../../View/Components/Charts/Charts";
 // import MainGrid from "../../View/Components/MainGrid/MainGrid";
 import { NotFound } from "../../View/Pages/not-found/NotFound";
-import { Home } from "../../View/Pages/Home/Home";
+import { Home } from "../../View/Pages/Home";
 import Bullshit from "../../View/Pages/bullshit/bullshit";
 import Armory from "../../View/Pages/Armory";
 import Monsters from "../../View/Pages/MonstersPage/Monsters";
